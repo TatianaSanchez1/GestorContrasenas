@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+nav {
+    height: 80px;
+    width: 100%;
+    background-color: #34495e;
+}
+
+nav .titulo {
+    font-size: 30px;
+    font-weight: 500;
+    color: #fff;
+    padding: 0 60px;
+    line-height: 80px;
+}
+
+nav span {
+    font-weight: 600;
+    color: #ccc;
+}
+
+nav ul {
+    float: right;
+    margin-right: 40px;
+}
+
+nav li {
+    display: inline-block;
+    margin: 0 8px;
+    line-height: 80px;
+}
+
+nav a {
+    color: #fff;
+    font-size: 18px;
+    text-transform: uppercase;
+    border: 1px solid transparent;
+    padding: 7px 10px;
+    border-radius: 5px;
+}
+
+nav i {
+    margin-right: 5px;
+}
+
+#selected,
+a:hover,
+.cerrarSesion {
+    border: 1px solid #F72585;
+    transition: 0.5s;
+}
+
+nav #icon {
+    color: #fff;
+    font-size: 30px;
+    line-height: 80px;
+    float: right;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+
+/* Responsive */
+
+@media (max-width:1048px) {
+    label .titulo {
+        font-size: 32px;
+        padding-left: 60px;
+    }
+    nav ul {
+        margin-right: 20px;
+    }
+    nav a {
+        font-size: 17px;
+    }
+}
+
+@media (max-width:909px) {
+    nav #icon {
+        display: block;
+    }
+    nav ul {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background-color: #2f3640;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all 0.5s;
+    }
+    nav li {
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    nav a {
+        font-size: 20px;
+    }
+    #selected,
+    a:hover {
+        border: none;
+        color: #F72585;
+    }
+    nav ul.show {
+        left: 0;
+    }
+}
+
+.contenido {
+    background: url(../img/bg.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: calc(100vh - 80px);
+}
+
+.contenido h1 {
+    display: block;
+    color: #fff;
+    font-size: 45px;
+    position: absolute;
+    top: 50%;
+    text-transform: uppercase;
+    width: 384px;
+    margin-left: calc(50% - 192px);
+}

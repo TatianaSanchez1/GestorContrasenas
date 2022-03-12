@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Gestor de Contraseñas</title>
+
+    <link rel="stylesheet" href="css/styleBienvenida.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            $('#icon').click(function() {
+                $('ul').toggleClass('show');
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <nav>
+        <label for="" class="titulo">Gestor de <span>Contraseñas</span> </label>
+        <ul>
+            <li> <a href="#" id="selected"><i class="fa-solid fa-circle-plus"></i>Ingresar</a></li>
+            <li> <a href="#"><i class="fa-solid fa-pen-to-square"></i>Actualizar</a></li>
+            <li> <a href="#"><i class="fa-solid fa-ban"></i>Eliminar</a></li>
+            <li> <a href="#"><i class="fa-solid fa-list"></i>Ver lista</a></li>
+            <li><a href="php/cerrarSesionUsuario.php " class="cerrarSesion">Cerrar Sesion</a></li>
+        </ul>
+
+        <label for="" id="icon">
+            <i class="fa-solid fa-bars"></i>
+        </label>
+    </nav>
+
+    <div class="contenido">
+        <center>
+            <h1>Bienvenido a tu sesion</h1>
+        </center>
+
+
+    </div>
+
+
+</body>
+
+</html>
